@@ -110,7 +110,7 @@
         function getAlternativeSuggestion(preferredIndex, currentIndex) {
             let alternativeShift = (preferredIndex - currentIndex + 11) % 12;
             if (alternativeShift === 0) return ""; // No alternative if it loops back to the same note
-            return `Adjust the octave if the sound is too low or too high for comfortable playability. Alternatively, you can transpose by ${alternativeShift} semitones for a different sound.`;
+            return 'Adjust the octave for better playability or transpose by ${alternativeShift} semitones for a different sound.';
         }
 
         // Close modal
